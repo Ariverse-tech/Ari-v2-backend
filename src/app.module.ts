@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { CalibrationModule } from './calibration/calibration.module';
 
 @Module({
   imports: [
@@ -28,6 +29,8 @@ import { AuthModule } from './auth/auth.module';
     }),
 
     AuthModule,
+
+    CalibrationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
